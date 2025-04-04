@@ -1,14 +1,101 @@
-<html>
-<head>  
-<title></title> <html>
-<head>  
-<title></title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-  <link rel="stylesheet" href=""/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test App Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    img.icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+    }
+    .download-btn {
+      padding: 8px 16px;
+      background-color: #007aff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .download-btn:hover {
+      background-color: #005fcc;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      th, td {
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>테스트 앱 스토어</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>아이콘</th>
+          <th>앱 이름</th>
+          <th>버전</th>
+          <th>다운로드</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://gakyunggu.github.io/test-appstore/icon/u4a.png" alt="App Icon" class="icon" /></td>
+          <td>U4A</td>
+          <td>0.9</td>
+          <td><a href="itms-services://?action=download-manifest&url=https://gakyunggu.github.io/test-appstore/manifest/u4a.plist" class="download-btn">다운로드</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://gakyunggu.github.io/test-appstore/icon/midas.png" alt="App Icon" class="icon" /></td>
+            <td>MIDAS M</td>
+            <td>1.4.2</td>
+            <td><a href="itms-services://?action=download-manifest&url=https://gakyunggu.github.io/test-appstore/manifest/midas.plist" class="download-btn">다운로드</a></td>
+          </tr>
+        <!-- 앱 리스트 행은 필요에 따라 추가 -->
+      </tbody>
+    </table>
+  </div>
 </body>
-<a href="itms-services://?action=download-manifest&url=https://gakyunggu.github.io/mypage/manifest.plist"> IOS 앱 받기</a>
 </html>
- 
